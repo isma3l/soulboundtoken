@@ -14,7 +14,7 @@ contract SoulBoundToken is ERC721, ERC721URIStorage, Ownable {
     constructor() ERC721("SoulBoundToken", "SBT") {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://base.com/";
+        return "https://backoffice-soul-token.herokuapp.com/";
     }
 
     function safeMint(address to, string memory uri) public onlyOwner {
